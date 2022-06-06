@@ -5,10 +5,10 @@ let button = document.querySelector(".enter button");
 let cong = document.getElementById("cong");
 let hak = 5;
 
+let p = document.createElement("p");
+state.appendChild(p);
+p.classList.add("cp");
 button.addEventListener("click", () => {
-  let p = document.createElement("p");
-  state.appendChild(p);
-  p.classList.add("cp");
   console.log(random);
   if (hak > 0) {
     if (input.value > 0 && input.value < 100) {
@@ -24,6 +24,7 @@ button.addEventListener("click", () => {
         document.querySelector(
           ".right p"
         ).innerHTML = `You have: ${hak} rights`;
+        applause.play();
       } else if (random > Number(input.value)) {
         p.innerHTML =
           "You should increase your number  " +
@@ -33,6 +34,7 @@ button.addEventListener("click", () => {
         document.querySelector(
           ".right p"
         ).innerHTML = `You have: ${hak} rights`;
+        up.play();
       } else {
         p.innerHTML =
           "You should decrease your number  " +
@@ -42,12 +44,15 @@ button.addEventListener("click", () => {
         document.querySelector(
           ".right p"
         ).innerHTML = `You have: ${hak} rights`;
+        dow.play();
       }
     } else {
       alert("Enter a convenient number");
     }
   } else {
-    confirm("Do you want to play again?");
+    if (confirm("Do you want to play again?")) {
+      location.reload();
+    }
   }
 });
 
