@@ -50,9 +50,10 @@ button.addEventListener("click", () => {
       alert("Enter a convenient number");
     }
   } else {
-    if (confirm("Do you want to play again?")) {
+    button.textContent = "RESTART";
+    button.addEventListener("click", () => {
       location.reload();
-    }
+    });
   }
 });
 
