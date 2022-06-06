@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guess Number</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div
+        class="waveWrapper waveAnimation"
+        style="height: 50vh; margin-top: 0"
+      >
+        <div class="waveWrapperInner top">
+          <div
+            class="wave waveTop"
+            style="background-image: url(wave-top.png)"
+          ></div>
+        </div>
+        <div class="waveWrapperInner mid">
+          <div class="wave waveMid" style="background-image: url(wave-mid.png)">
+            <h1 class="text-center">WELCOME MY GAME</h1>
+          </div>
+        </div>
+        <div class="waveWrapperInner bottom">
+          <div
+            class="wave waveBottom"
+            style="background-image: url(wave-bot.png)"
+          ></div>
+        </div>
+      </div>
+      <div class="hone text-center"><h1>Please Guess The Number</h1></div>
+      <div class="enter text-center mt-5">
+        <input type="text" />
+        <button class="btn btn-light text-danger bg-black">
+          I WANT TO TRY
+        </button>
+      </div>
+      <div class="text-center display-5 mt-3">
+        <p>You have: 5 rights</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
