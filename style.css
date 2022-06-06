@@ -84,6 +84,7 @@ body {
   width: 20vw;
   height: 30px;
   margin-top: 40px;
+  outline: none;
 }
 .enter button {
   font-family: "Press Start 2P", cursive;
